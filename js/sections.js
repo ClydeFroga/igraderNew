@@ -58,7 +58,6 @@ jQuery(function($) {
           button.remove()
         }
       )
-
     }
     //block with selected category
     showBlock() {

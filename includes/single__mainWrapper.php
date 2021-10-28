@@ -1,5 +1,11 @@
 <div class="single__mainWrapper">
 
+    <?php if ( $offset !== NULL) { ?>
+        <script>
+            urls.push('<?php echo get_the_permalink() ?>')
+        </script>
+    <?php } ?>
+
 	<div class="single__main">
 		<?php
 		if ( $offset == NULL) {
@@ -24,14 +30,14 @@
 			require locate_template('includes/dateAndViews.php');
 			?>
 
-			<div class="imgBlock imgBlockFull">
-				<?php the_post_thumbnail('full'); ?>
-			</div>
-            <span class="sign">
-                                                <?php
-                                                echo the_post_thumbnail_caption();
-                                                ?>
-                                            </span>
+<!--			<div class="imgBlock imgBlockFull">-->
+                <?php //the_post_thumbnail('full'); ?>
+<!--			</div>-->
+<!--            <span class="sign">-->
+<!--                                                --><?php
+//                                                echo the_post_thumbnail_caption();
+//                                                ?>
+<!--                                            </span>-->
 			<?php
 			if ($brand !== NULL && $brand !== false) {?>
                 <div class="single__mainContentHidden">
@@ -111,6 +117,7 @@
                             'offset'              => $offset !== NULL ? $offset + 1 : 0,
                             'ignore_sticky_posts' => true,
                             'post_status' => 'publish',
+                            'cat' => -1480,
                             'tax_query'           => [
                                 [
                                     "operator" => 'IN',
@@ -159,7 +166,10 @@
 						'posts_per_page'      => 1,
 						'offset'              => $offset !== NULL ? $offset + 1 : 0,
 						'ignore_sticky_posts' => true,
+						'post_status' => 'publish',
+						'cat' => -1480,
 						'tax_query'           => [
+                            'relation' => 'AND',
 							[
 								"operator" => 'IN',
 								'taxonomy' => 'mainthemes',
@@ -250,7 +260,6 @@
 
 <?php if ( $offset !== NULL) { ?>
     <script>
-      urls.push('<?php echo get_the_permalink() ?>')
       checkedFoxyes.loadNews()
     </script>
 <?php } ?>

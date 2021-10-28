@@ -1,5 +1,5 @@
 <section class="catalog">
-	<span class="largeTitle">Новое в каталоге</span>
+	<span class="largeTitle"><?php echo $catalog['title'] ?></span>
 
 	<div>
 		<?php

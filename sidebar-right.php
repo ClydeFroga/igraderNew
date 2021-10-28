@@ -1,7 +1,6 @@
 <aside class="rightAside">
 	<?php get_template_part('includes/socialMedia'); ?>
 
-
     <?php if(is_home()) { ?>
         <div class="rightAside__darkBlock">
             <a href="<?php echo get_term_link(1607, 'mainthemes') ?>" class="smallTitle">Открытое голосование</a>
@@ -88,7 +87,4 @@
         </div>
     <?php }
     ?>
-
-
-
 </aside>

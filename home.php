@@ -671,6 +671,7 @@
 			        <?php
 			        $catalog = [
 				        'loadMore' => true,
+				        'title' => 'Новое в каталоге',
 			        ];
 
 			        $per_page = $is_PC ? 4 : 2;

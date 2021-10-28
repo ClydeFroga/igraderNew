@@ -71,10 +71,9 @@ query_posts($query_string . "&posts_per_page=". $per_page);
                                         </span>
                                     </div>
                                     <span class="rubric__topDescription rubricDesc">
-									<?php echo term_description(); ?>
-	                            </span>
+                                        <?php echo term_description(); ?>
+                                    </span>
 								<?php } ?>
-
 							</div>
 
                             <?php if($is_PC) { ?>

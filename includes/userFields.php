@@ -1,4 +1,5 @@
 <div class="userFields">
+    <?php if (false) { ?>
 	<a href="#" class="userFields__user">
 		<svg>
 			<use href="<?php bloginfo('template_url')?>/svg/out/symbol/svg/sprite.symbol.svg#user"></use>
@@ -6,10 +7,11 @@
 		<span>Войти</span>
 	</a>
 	<span class="userFields__notification active">
-                <svg>
-                    <use href="<?php bloginfo('template_url')?>/svg/out/symbol/svg/sprite.symbol.svg#bullhorn"></use>
-                </svg>
-            </span>
+        <svg>
+            <use href="<?php bloginfo('template_url')?>/svg/out/symbol/svg/sprite.symbol.svg#bullhorn"></use>
+        </svg>
+    </span>
+    <?php } ?>
 
 	<form role="search" action="<?php echo home_url( '/' ); ?>" class="search">
 		<label>

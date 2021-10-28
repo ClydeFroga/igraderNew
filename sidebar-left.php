@@ -6,6 +6,8 @@
 			</svg>
 		</div>
 
+		<?php get_template_part('includes/userFields'); ?>
+
 		<?php wp_nav_menu( [
 			'container' => '',
 			'items_wrap' => '<ul >%3$s</ul>',

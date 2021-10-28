@@ -63,7 +63,7 @@
 
         </div>
 
-		<div id="<?php echo $slider['id']; ?>" class="swiper-container">
+		<div id="<?php echo $slider['id']; ?>" class="swiper">
 			<div class="swiper-wrapper">
 				<?php
 

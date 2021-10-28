@@ -24,7 +24,7 @@ if ($sliderLarge['classes']) {
 			<?php echo $sliderLarge['title']['name'] ?>
 		</a>
 
-		<div id="sliderLarge" class="swiper-container">
+		<div id="sliderLarge" class="swiper">
 			<div class="swiper-wrapper">
 				<?php
 				while($query -> have_posts()) {

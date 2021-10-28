@@ -8,7 +8,7 @@
         </span>
 		</div>
 		<div class="sendpulse__right">
-            <form action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo2Njk5ODMyLCJhZGRyZXNzX2Jvb2tfaWQiOjg4OTgxODQ2LCJsYW5nIjoicnUifQ==" method="post">
+            <form action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjozOTAxMTYsImFkZHJlc3NfYm9va19pZCI6ODg5ODE4NDYsImxhbmciOiJydSJ9" method="post">
                 <div>
                     <input type="hidden" name="sender" value="news@pgmedia.ru">
                 </div>

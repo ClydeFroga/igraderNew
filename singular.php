@@ -34,6 +34,8 @@ if ($is_news) { ?>
       // let checkedFoxyes2 = checkedFoxyes
     </script>
 <?php }
+
+$comTrans2021 = has_term( 2466, 'specials' );
 ?>
 
 	<div class="wrapper">
@@ -50,6 +52,12 @@ if ($is_news) { ?>
                         <section class="single">
                             <div class="single__main">
                                 <?php get_template_part('includes/breadcrumbs'); ?>
+
+                                <?php
+                                if($comTrans2021) {
+                                    get_template_part('includes/specialsBanners/comTrans/cmtr2021');
+                                }
+                                ?>
 
                                 <div class="single__mainWrapper">
                                     <div class="single__mainContent">
@@ -248,7 +256,6 @@ if ($is_news) { ?>
                                     <?php
                                     $query = new WP_Query( [
                                         'posts_per_page'      => 1,
-                                        'offset'              => 0,
                                         'ignore_sticky_posts' => true,
                                         'tax_query'           => [
                                             [
@@ -803,7 +810,7 @@ if ($is_news) { ?>
 
 <?php if (!$is_news) { ?>
 
-    <script src="<?php bloginfo('template_url')?>/js/sticky.min.js?version=2"></script>
+    <script src="<?php bloginfo('template_url')?>/js/sticky.min.js?version=3"></script>
 
     <script>
       window.addEventListener('load', () => {
